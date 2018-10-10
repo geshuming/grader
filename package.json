@@ -6,7 +6,7 @@
   "scripts": {
     "build": "./scripts/build.sh",
     "typecheck": "tsc --noEmit",
-    "test": "TIMEOUT=2000 jest --env=node",
+    "test": "TIMEOUT=2000 jest --env=node --detectOpenHandles",
     "test-coveralls": "TIMEOUT=2000 jest --env=node --coverage --coverageReporters=text-lcov | coveralls"
   },
   "dependencies": {
