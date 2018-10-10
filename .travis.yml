@@ -6,5 +6,8 @@ branches:
   except:
     - /^no-ci.*$/
 script:
+  - yarn test-version
+  - yarn node-version
+  - yarn test
   - yarn test-coveralls
   - yarn typecheck
